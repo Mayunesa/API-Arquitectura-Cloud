@@ -2,6 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from typing import List
 import uvicorn
+from models import Item
 
 from database import get_db, create_tables
 from schemas import ItemCreate, ItemUpdate, ItemResponse
